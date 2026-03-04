@@ -1,0 +1,21 @@
+<form (submit)="onSubmit($event)">
+  <app-field-form [label]="'Employee Code'" [type]="'text'" [field]="employeeForm.employeeCode"></app-field-form>
+  <app-field-form [label]="'Employee Name'" [type]="'text'" [field]="employeeForm.employeeName"></app-field-form>
+  <app-field-form [label]="'Birth Date'" [type]="'date'" [field]="employeeForm.birthDate"></app-field-form>
+
+  <app-select-field [label]="'Birth City'" [labelHint]="'Select city'" [field]="employeeForm.birthCity"
+                    [selectValues]="cities"></app-select-field>
+  <app-field-form [label]="'Employee ID'" [type]="'text'" [field]="employeeForm.employeeId"></app-field-form>
+  <app-select-field [label]="'Department'" [labelHint]="'Select department'" [field]="employeeForm.department"
+                    [selectValues]="departments"></app-select-field>
+
+  <app-field-form [label]="'Job Title'" [type]="'text'" [field]="employeeForm.jobTitle"></app-field-form>
+  <app-field-form [label]="'Direct Manager'" [type]="'text'" [field]="employeeForm.directManager"></app-field-form>
+  <app-select-field [label]="'Contract Type'" [labelHint]="'Select type'" [field]="employeeForm.contractType"
+                    [selectValues]="contractTypes"></app-select-field>
+
+  <app-select-field [label]="'Status'" [labelHint]="'Select status'" [field]="employeeForm.status"
+                    [selectValues]="statuses"></app-select-field>
+
+  <button type="submit" [disabled]="employeeForm().invalid()">View</button>
+</form>
