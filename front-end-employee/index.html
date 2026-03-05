@@ -12,79 +12,20 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
 
-    <style>
-        /* Your custom DHTML styles */
-        .box-container {
-            margin-top: 50px;
-            text-align: center;
-        }
-
-        #animateBox {
-            width: 100px;
-            height: 100px;
-            background: red;
-            margin: 20px auto;
-            display: none;
-            /* Hidden by default for jQuery fadeIn */
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="form/form.css">
 </head>
 
-<body ng-controller="MainContrllr">
-
-    <!-- <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Menu</a>
-            </div>
-        </div>
-    </nav> -->
+<body>
     <app-bar></app-bar>
-
-    <div class="container box-container">
-        <div class="jumbotron">
-            <h1>{{ greeting }}</h1>
-            <h2>{{ label }}</h2>
-            <h3>{{ hint }}</h3>
-            <p>{{description}}</p>
-
-            <button class="btn btn-primary btn-lg" id="magicBtn">
-                Run jQuery Animation
-            </button>
-        </div>
-
-        <div id="animateBox"></div>
-    </div>
-
-    <script>
-        // --- STEP 4: AngularJS Logic ---
-        var app = angular.module('myEmployeeApp', []);
-
-        app.controller('MainContrllr', function ($scope) {
-            $scope.greeting = "Hello, Employee!";
-            $scope.label = "Welcome to the Legacy Project";
-            $scope.hint = "my hint is: This project is a mix of DHTML, jQuery, Bootstrap 3, and AngularJS 1.6";
-            $scope.description = "Built with DHTML, jQuery, Bootstrap 3, and AngularJS 1.6";
-        });
-
-        // --- STEP 5: jQuery & DHTML Logic ---
-        $(document).ready(function () {
-            $('#magicBtn').click(function () {
-                // Classic DHTML behavior: changing CSS and Visibility via jQuery
-                $('#animateBox').toggle().animate({
-                    width: "500px",
-                    opacity: 0.25
-                }, 1000).animate({
-                    width: "1000px",
-                    opacity: 0.5
-                }, 500).animate({
-                    width: "2000px",
-                    opacity: 1.0
-                }, 500);
-            });
-        });
-    </script>
+    <form-employee></form-employee>
+    <employee-data-view></employee-data-view>
+    <script src="index.js"></script>
     <script src="appbar/appbar.js"></script>
+    <script src="form/form.js"></script>
+    <script src="form/field-form/field-form.js"></script>
+    <script src="form/select-field/select-field.js"></script>
+    <script src="data-view/data-view.js"></script>
 </body>
 
 </html>

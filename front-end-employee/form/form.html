@@ -1,0 +1,22 @@
+<form ng-submit="$formCtrl.onSubmit($event)">
+    <app-field-form label="Employee Code" type="text" field="$formCtrl.employeeForm.employeeCode">
+    </app-field-form>
+    <app-field-form label="Employee Name" type="text" field="$formCtrl.employeeForm.employeeName"></app-field-form>
+    <app-field-form label="Birth Date" type="date" field="$formCtrl.employeeForm.birthDate"></app-field-form>
+
+    <app-select-field label="Birth City" label-hint="Select city" field="$formCtrl.employeeForm.birthCity"
+        select-values="$formCtrl.cities"></app-select-field>
+    <app-field-form label="Employee ID" type="text" field="$formCtrl.employeeForm.employeeId"></app-field-form>
+    <app-select-field label="Department" label-hint="Select department" field="$formCtrl.employeeForm.department"
+        select-values="$formCtrl.departments"></app-select-field>
+
+    <app-field-form label="Job Title" type="text" field="$formCtrl.employeeForm.jobTitle"></app-field-form>
+    <app-field-form label="Direct Manager" type="text" field="$formCtrl.employeeForm.directManager"></app-field-form>
+    <app-select-field label="Contract Type" label-hint="Select type" field="$formCtrl.employeeForm.contractType"
+        select-values="$formCtrl.contractTypes"></app-select-field>
+
+    <app-select-field label="Status" label-hint="Select status" field="$formCtrl.employeeForm.status"
+        select-values="$formCtrl.statuses"></app-select-field>
+
+    <button type="submit">View</button>
+</form>

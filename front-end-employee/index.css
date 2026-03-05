@@ -1,0 +1,24 @@
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+input,
+select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: inherit;
+    height: 25px;
+    width: 300px;
+    background-color: transparent;
+}
+
+select {
+    padding: 0;
+    color: black;
+}
