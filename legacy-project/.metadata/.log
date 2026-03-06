@@ -1,0 +1,26 @@
+!SESSION 2026-03-06 04:24:24.227 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.10
+java.vendor=Debian
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-06 04:24:26.458
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-06 04:24:57.451
+!MESSAGE Logback config file: /media/taherlinux/taherssd2/Task/legacy-project/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml
+!SESSION 2026-03-06 04:26:11.092 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.10
+java.vendor=Debian
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product -data file:/media/taherlinux/taherssd2/Task/legacy-project/
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-06 04:26:13.405
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-06 04:26:14.513
+!MESSAGE Logback config file: /media/taherlinux/taherssd2/Task/legacy-project/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml

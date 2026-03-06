@@ -1,0 +1,34 @@
+<table class="table table-striped table-bordered table-hover" style="margin-top: 10px;">
+    <thead>
+        <tr>
+            <th>Employee Code</th>
+            <th>Employee Name</th>
+            <th>Birth Date</th>
+            <th>Birth City</th>
+            <th>Employee ID</th>
+            <th>Department</th>
+            <th>Job Title</th>
+            <th>Direct Manager</th>
+            <th>Contract Type</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="emp in $ctrl.employees track by emp.employeeCode">
+            <td>{{ emp.employeeCode }}</td>
+            <td>{{ emp.employeeName }}</td>
+            <td>{{ emp.birthDate }}</td>
+            <td>{{ emp.birthCity }}</td>
+            <td>{{ emp.employeeId }}</td>
+            <td>{{ emp.department }}</td>
+            <td>{{ emp.jobTitle }}</td>
+            <td>{{ emp.directManager }}</td>
+            <td>{{ emp.contractType }}</td>
+            <td>
+                <span ng-class="['status', $ctrl.getStatusClass(emp.status)]">
+                    {{ emp.status }}
+                </span>
+            </td>
+        </tr>
+    </tbody>
+</table>
