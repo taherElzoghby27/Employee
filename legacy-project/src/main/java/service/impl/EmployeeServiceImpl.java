@@ -40,11 +40,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 		queryBuilder.append("u.BIRTH_CITY AS birth_city, u.BIRTH_DATE AS birth_date, ");
 		queryBuilder.append("d.NAME AS department_name, j.TITLE AS job, ct.TYPE AS contract_type, ");
 		queryBuilder.append("u2.NAME AS direct_manager, u.STATUS AS status ");
-		queryBuilder.append("FROM USERTABLE u ");
-		queryBuilder.append("LEFT JOIN JOB j ON u.JOB_ID = j.ID ");
-		queryBuilder.append("LEFT JOIN DEPARTMENT d ON u.DEPARTMENT_ID = d.ID ");
-		queryBuilder.append("LEFT JOIN CONTRACTTYPE ct ON u.CONTRACT_TYPE_ID = ct.ID ");
-		queryBuilder.append("LEFT JOIN USERTABLE u2 ON u.MANAGER_ID = u2.ID ");
+		queryBuilder.append("FROM TEST.USERTABLE u ");
+		queryBuilder.append("LEFT JOIN TEST.JOB j ON u.JOB_ID = j.ID ");
+		queryBuilder.append("LEFT JOIN TEST.DEPARTMENT d ON u.DEPARTMENT_ID = d.ID ");
+		queryBuilder.append("LEFT JOIN TEST.CONTRACTTYPE ct ON u.CONTRACT_TYPE_ID = ct.ID ");
+		queryBuilder.append("LEFT JOIN TEST.USERTABLE u2 ON u.MANAGER_ID = u2.ID ");
 		queryBuilder.append("WHERE 1=1 ");
 
 		if (employee.getEmployeeCode() != null && !employee.getEmployeeCode().isEmpty()) {

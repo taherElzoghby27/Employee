@@ -1,6 +1,7 @@
 <Context>
 
   <Resource name="employee_db"
+            auth="Container"
             type="javax.sql.DataSource"
             username="system"
             password="hr"
